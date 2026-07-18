@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #020617;
+  --bg-dark: #070b19;
+  --bg-card: #0f172a;
+  --bg-light: #1e293b;
+  --text-title: #ffffff;
+  --text-body: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: rgba(30, 41, 59, 0.6);
+  --accent-blue: #2563eb;
+  --accent-glow: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --glow-strength: 0.15;
+}
+
+html.light {
+  --bg-deep: #f8fafc;
+  --bg-dark: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-light: #e2e8f0;
+  --text-title: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --border-color: rgba(226, 232, 240, 1.0);
+  --accent-blue: #1d4ed8;
+  --accent-glow: #2563eb;
+  --accent-cyan: #0891b2;
+  --glow-strength: 0.05;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-navy-dark: var(--bg-dark);
+  --color-navy-deep: var(--bg-deep);
+  --color-navy-card: var(--bg-card);
+  --color-navy-light: var(--bg-light);
+  --color-blue-electric: var(--accent-blue);
+  --color-blue-glow: var(--accent-glow);
+  --color-cyan-glow: var(--accent-cyan);
+  --color-slate-text: var(--text-body);
+  --color-slate-muted: var(--text-muted);
+  --color-title-color: var(--text-title);
+  --color-border-custom: var(--border-color);
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(37, 99, 235, 0.3);
+  color: var(--text-title);
+}
+
+

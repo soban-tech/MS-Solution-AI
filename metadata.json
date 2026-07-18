@@ -1,0 +1,6 @@
+{
+  "name": "MS Solutions AI",
+  "description": "Modern, responsive corporate website for MS Solutions AI, featuring cutting-edge artificial intelligence, chatbot, automation, and web development services founded by Muhammad Soban.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
